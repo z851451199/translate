@@ -1,0 +1,369 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none}
+.imgix{
+	width: 100%;
+    height: 800px;
+}
+#header{
+z-index: 1000;
+height: 100px;
+width: 100%;
+background-color: rgba(225,225,225,0.54);
+position: absolute;
+top: 0px;
+line-height: 80px;
+    z-index: 1000;
+
+}
+#header ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-family: "微软雅黑";
+
+}
+#header ul{
+    width: 88%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#header ul li:last-child{
+    margin-right: 0;
+
+}
+#header ul li{
+    height: 100%;
+    float: left;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+}
+
+#header ul li>img{
+    height: 100%;
+}
+.d1a{
+    float: left;
+}
+.d1{
+    margin-top: 16px;
+    width:40px;height:40px;
+    margin-right: 10px;
+    float: left;
+}
+.d1 img{width: 100%;height: 100%}
+
+
+
+
+.play {
+    width: 100%;
+    height: 880px;
+    margin: 0px auto 0;
+    background: #999;
+    font: 12px Arial;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}
+
+.big_pic {
+    float: left;
+    width: 90%;
+    height: 880px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background: #222;
+    position: relative;
+}
+
+.big_pic li {
+    width: 100%;
+    height: 880px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.big_pic li img {
+    width: 100%;
+    height: 100%;
+}
+
+.mark_left {
+    display: inline-block;
+    width: 50%;
+    height: 550px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    background: red;
+    opacity: 0;
+    z-index: 3000;
+}
+
+.mark_right {
+    display: inline-block;
+    width: 50%;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: green;
+    opacity: 0;
+    z-index: 3000;
+}
+
+.big_pic .prev {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    /*border: 1px solid white;*/
+    /*background: url(img/btn1.png) no-repeat;*/
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    z-index: 3001;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    cursor: pointer;
+}
+.prev img,.next img{width: 100%;height: 100%;}
+.big_pic .next {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+
+    /*background: url(img/btn2.png) no-repeat;*/
+    position: absolute;
+    top: 43%;
+    right: 5%;
+    z-index: 3001;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.big_pic .text {
+    position: absolute;
+    left: 10px;
+    top: 302px;
+    z-index: 3000;
+    color: #ccc;
+}
+
+.big_pic .length {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    z-index: 3000;
+    color: #ccc;
+}
+
+.big_pic .bg {
+    width: 400px;
+    height: 25px;
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    position: absolute;
+    z-index: 2999;
+    bottom: 0;
+    left: 0;
+}
+
+.small_pic {
+    border: 0px solid red;
+    float: right;
+    width: 9.85%;
+    height: 880px;
+    position: relative;
+    top: 0px;
+    left: -2px;
+    overflow: hidden;
+}
+
+.small_pic ul {
+    height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.small_pic li {
+    border: 0px solid blue;
+    width: 100%;
+    height: 185px;
+    padding-right: 10px;
+    cursor: pointer;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.small_pic li img {
+    width: 7%;
+    height: 184px;
+}
+/*内容部分*/
+
+.center {
+    border: 0px solid red;
+    width: 100%;
+    float: left;
+    background: white;
+    position: relative;
+    top: 400px;
+    margin: 100px 0 20px 0;
+    height: 1800px;
+}
+
+.text {
+    border: 1px solid white;
+    width: 90%;
+    height: 700px;
+    background: url(img/hua.png) #F2F2F2 no-repeat left bottom;
+}
+
+.text_center {
+    border: 1px solid black;
+    width: 95%;
+    height: 95%;
+    margin: 1.5% 2.5%;
+}
+
+.img_s {
+    margin: 8% 0 0 20%;
+}
+
+.txt {
+    width: 40%;
+    border: 0px solid red;
+    height: 300px;
+    margin: 20px 0 0 145px;
+    text-align: center;
+    line-height: 40px;
+    color: #666666;
+}
+
+.img_line {
+    border: 1px solid #ddd;
+    width: 28%;
+    height: 430px;
+    float: right;
+    margin: -420px 150px 0 0;
+}
+
+.img_img {
+    border: 1px solid black;
+    width: 28%;
+    height: 430px;
+    background: url(img/b23.jpg) no-repeat;
+    position: relative;
+    top: -373px;
+    left: 28%;
+}
+/*我们的服务*/
+
+.ours {
+    border: 0px solid red;
+    width: 100%;
+    float: left;
+    margin: 50px 0 0px 0;
+    text-align: center;
+}
+
+.aa {
+    display: block;
+    margin: 0 0 40px 5.5%;
+}
+
+.ul3 {
+    width: 53%;
+    height: 670px;
+    border: 0px solid red;
+    float: right;
+    margin: -710px 50px 0 0;
+}
+
+.ul3 li {
+    text-align: left;
+    padding: 0 10px;
+    height: 50px;
+    border: 0px solid black;
+    margin-bottom: 6px;
+    line-height: 50px;
+}
+
+.active {
+    background: #333333;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*预约*/
+
+.ask {
+    width: 90.5%;
+    height: 580px;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0 0 0 75px;
+}
+
+.ask h3 {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    border: 0px solid red;
+    margin: 20px 0 50px 0;
+}
+
+.put {
+    width: 94%;
+    border: 1px solid #000;
+    height: 40px;
+    margin: 10px 0;
+}
+
+textarea {
+    width: 94%;
+    height: 150px;
+    resize: none;
+    margin: 10px 0;
+}
+
+.but {
+    display: inline-block;
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    line-height: 40px;
+    color: black;
+}
+#low{
+    width: 100%;
+    height: 500px;
+    background: red;
+    position: absolute;
+    top: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none}
+html,body{width: 100%;height: 100%}
+.register{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+}
+.imgix{
+	width: 100%;
+    height: 800px;
+}
+#header{
+
+height: 100px;
+width: 100%;
+background-color: rgba(225,225,225,0.54);
+position: absolute;
+top: 0px;
+line-height: 80px;
+
+}
+#header ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-family: "微软雅黑";
+
+}
+#header ul{
+    width: 88%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#header ul li:last-child{
+    margin-right: 0;
+
+}
+#header ul li{
+    height: 100%;
+    float: left;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+}
+
+#header ul li>img{
+    height: 100%;
+}
+.d1a{
+    float: left;
+}
+.d1{
+    margin-top: 16px;
+    width:40px;height:40px;
+    margin-right: 10px;
+    float: left;
+}
+.d1 img{width: 100%;height: 100%}
+
+
+
+
+.rg-main{
+    width: 60%;
+    height: 560px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -30%;
+    /*background: #ddd;*/
+}
+.rgm-l{
+    float: left;
+    width: 43%;
+    height: 90%;
+    text-align: center;
+    background: #ddd;
+}
+.rgm-l p{
+    width: 100%;
+    height: 30px;
+    float: right;
+    text-align: right;
+    font-size: 24px;
+    color: #69a81e;
+    margin: 20px 3px 0 0;
+}
+.rgm-l img:nth-child(2){
+    width: 100%;
+}
+.rgm-r{
+    float: left;
+    width: 55%;
+    height: 90%;
+    background: white;
+}
+.reg_title {
+    width: 360px;
+    height: 50px;
+    float: left;
+    margin-left: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.reg_title h1 {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-size: 24px;
+    color: #a8a8a8;
+    font-weight: bold;
+}
+.reg_title a {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #5fb42a;
+    padding-right: 20px;
+    background: url(../img/icons02.png) 35px 3px no-repeat;
+    margin-top: 15px;
+}
+.reg_form {
+    width: 360px;
+    margin: 30px 0 0 30px;
+    float: left;
+    position: relative;
+}
+.reg_form li {
+    height: 70px;
+}
+.reg_form li label {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+.reg_form li input {
+    width: 288px;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    outline: none;
+    text-indent: 10px;
+    background-color: #f8f8f8;
+}
+.reg_form li.agreement input {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 13px;
+}
+.reg_form li.agreement label {
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+}
+.reg_form li.reg_sub input {
+    width: 360px;
+    height: 40px;
+    background-color: #47aa34;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

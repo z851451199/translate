@@ -1,0 +1,145 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none}
+a{color: black}
+html,body{width: 100%;height: 100%}
+.shopping{
+    width: 100%;
+    height: 1000px;
+    background:#f5f5f5;
+    position: absolute;
+    top: 0;
+}
+.imgix{
+	width: 100%;
+    height: 800px;
+}
+#header{
+
+height: 100px;
+width: 100%;
+background-color: black;
+position:relative;
+top: 0px;
+line-height: 80px;
+
+}
+#header ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-family: "微软雅黑";
+
+}
+#header ul{
+    width: 88%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#header ul li{
+    height: 100%;
+    float: left;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+}
+#header ul li:last-child{
+    margin-right: 0;
+
+}
+
+
+#header ul li>img{
+    height: 100%;
+}
+.d1a{
+    float: left;
+}
+.d1{
+    margin-top: 16px;
+    width:40px;height:40px;
+    margin-right: 10px;
+    float: left;
+}
+.d1 img{width: 100%;height: 100%}
+
+.seach{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+.sh-box{
+    width: 60%;
+    height: 50px;
+    margin: 0 auto;
+}
+.sh-box *{float: left}
+.sh-box input:not(:last-child){
+    width: 80%;
+    height: 93%;
+    border: 2px solid black;
+    background: none;
+    outline: none;
+    padding-left: 2%;
+}
+.sh-box .btn{
+    border: 0;
+    outline: none;
+    background: none;
+    display: inline-block;
+    width: 9%;
+    height: 100%;
+    background: black;
+    color: white;
+    font-size: 21px;
+    /*color: #ddd;*/
+    line-height: 45px;
+    text-align: center;
+}
+.sh-main{
+    width: 80%;
+    margin: 20px auto;
+    height: 1000px;
+    /*background: #ddd;*/
+}
+.shm-h3{
+    font-size: 24px;
+    color: black;
+    padding: 10px 0;
+    border-bottom: 1px dotted red;
+}
+.sh-content{
+    width: 100%;
+}
+.sh-content li{width:19%;float: left;margin:1.2% 1.2% 0 0;background-color: rgba(225,225,225,0.6);padding-bottom: 20px}
+.sh-content li:nth-child(5n+5){
+    margin-right: 0;
+}
+.sh-content li img{width: 100%}
+.sh-content li p{font-size: 12px;}
+.shp-p3{
+    text-align: center;
+    margin-top: 15px;
+}
+.shc-p1{
+    color: red;
+    font-size: 14px;
+
+}
+.shc-p1 span{
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+.adcar{
+    margin: 0 auto;
+    background: red;
+    color: white;
+    padding: 5px 60px;
+    text-align: center;
+}
+
+
+
+

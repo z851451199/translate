@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+    <link rel="stylesheet" href="/static/css/register.css">
+</head>
+<body>
+<div class="register">
+    {% include 'public/head.html' %}
+    <div class="rg-main">
+        <div class="rgm-l">
+            <img src="/static/img/newy.png">
+            <p>予，执子之手，共赴一世情长</p>
+        </div>
+        <div class="rgm-r">
+            <div class="reg_title clearfix">
+				<h1>用户注册</h1>
+				<a href="/login">登录 /</a>
+			</div>
+            <div class="reg_form clearfix">
+				<form method="post">
+                    <ul>
+                        <li>
+                            <label>用户名:</label>
+                            <input type="text" name="user" id="user_name">
+                        </li>
+                        <li>
+                            <label>密码:</label>
+                            <input type="password" name="pwd" id="pwd">
+                        </li>
+                        <li>
+                            <label>确认密码:</label>
+                            <input type="password" name="cpwd" id="cpwd">
+                        </li>
+                        <li>
+                            <label>手机:</label>
+                            <input type="text" name="phone" id="phone">
+                        </li>
+                        <li class="agreement">
+                            <input type="checkbox" name="allow" id="allow" checked="checked">
+                            <label>同意“用户使用协议”</label>
+                        </li>
+                        <li class="reg_sub">
+                            <input type="submit" value="注 册" name="">
+                        </li>
+                    </ul>
+				</form>
+
+			</div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}购物车{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/car.css">
+    <link rel="stylesheet" href="/static/css/shopping.css">
+    <script src="/static/js/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div id="car">
+    {% include 'public/head.html' %}
+    {% block content %}
+    <div class="dmall" id="shpcar">
+            <h3 class="seach-title">全部商品<br /></h3>
+            <p class="oback"><a href="/shopping">返回</a></p>
+            <div class="orders"><a href="/order_more?uid={{ uid }}">我的订单</a></div>
+            <ul class="seach-detail">
+            {% if rvlist %}
+                {% for r in rvlist %}
+
+                    <li>
+                        <div class="checkbox"><input type="checkbox" class="cks" value="{{ r.sid }}"></div>
+                        <a href="/detail?id={{ r.sid }}">
+                            <div class="dmv1"><img src="/static/img/{{ r.imgUrl }}"></div>
+                        </a>
+                        <div class="dtv2">
+                            <p class="ctitle">{{ r.sname }}</p>
+                            <p class="cprice"><span>￥</span>{{ r.sprice }}</p>
+                            <p class="changeNum">
+                                数量：<button class="btn1">+</button><span class="sps">1</span><button class="btn2">-</button>
+                            </p>
+                        </div>
+                        <div class="dv3"><a href="/cardel?id={{ r.sid }}&uid={{ uid }}">移出购物车</a></div>
+                    </li>
+
+                {% endfor %}
+                <div class="btoom">
+                    <p class="buy"><a href="/" class="lastbtn">立即下单</a></p>
+                    <p class="ckbuy"><label>全部选中：</label><input type="checkbox" class="ckx"></p>
+
+                </div>
+
+            {% else %}
+                <li><h3>购物车为空</h3></li>
+                <p class="guang"><a href="/shopping" class="lastbtn">再去逛逛</a></p>
+            {% endif %}
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $('.btn1').click(function () {
+
+                bindex = $(this).index('.btn1');
+                num = parseInt($('.sps').eq(bindex).text());
+
+                $('.sps').eq(bindex).html(num+1)
+                subtim()
+
+            });
+            $('.btn2').click(function () {
+
+                bindex = $(this).index('.btn2');
+                num = parseInt($('.sps').eq(bindex).text());
+                if(num <=0 ){
+                    $('.sps').eq(bindex).html(0)
+                }else {
+                    $('.sps').eq(bindex).html(num-1)
+                }
+                subtim()
+            });
+            $(".ckx").click(function () {
+                if ($(this).is(':checked')) {
+                    $(".cks").prop("checked", true);
+                } else {
+                    $(".cks").prop("checked", false);
+                }
+                subtim()
+            });
+
+
+            $('.cks').click(function () {
+                subtim()
+            })
+            function subtim() {
+                var str1='';
+                var str2='';
+                $('input[class="cks"]:checked').each(function (i) {
+                   /***
+                    *if (i == 1){
+                        str1 += $(this).val();
+                        str2 += $(this).parents('div').siblings('.dtv2').children('p').children('.sps').text()
+                    }
+                    ***/
+                   if (i == 0){
+                       str1 += $(this).val();
+                       str2 += $(this).parents('div').siblings('.dtv2').children('p').children('.sps').text()
+                   }else {
+                       str1 += '-'+$(this).val();
+                       str2 += '-'+$(this).parents('div').siblings('.dtv2').children('p').children('.sps').text()
+                   }
+
+               });
+                $('.buy').html('')
+               $('.buy').append('<a href="/order?uid={{ uid }}&id='+str1+'&num='+str2+'" class="lastbtn">立即下单</a>')
+            }
+        </script>
+    {% endblock %}
+    </div>
+
+
+</body>
+</html>

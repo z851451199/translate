@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}商品详情{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/detail.css">
+    <link rel="stylesheet" href="/static/css/shopping.css">
+</head>
+<body>
+{% include 'public/head.html' %}
+{% block content %}
+<div class="detail">
+    <div class="dtop">
+        <div class="dt1"><img src="/static/img/{{ rl.imgUrl }}" class="dtimg1"></div>
+        <div class="dt2">
+            <p class="dtp1">{{ rl.sname }}</p>
+            <p class="dtp2">价格：<span>￥</span>{{ rl.sprice }}</p>
+            <p class="dtp2">库存：{{ rl.stock }}</p>
+            <p>
+                {% if user %}
+                <a href="/add_car1?Did={{ rl.sid }}&uId={{ uid }}&page=detail?id={{ rl.sid }}">加入购物车</a>
+                {% else %}
+                <a href="/login">加入购物车</a>
+                {% endif %}
+            </p>
+
+        </div>
+   </div>
+    <div class="dbt">
+        <h3>简介：</h3>
+        <p>{{ rl.scontent }}</p>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

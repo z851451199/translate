@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/show.css')}}">
+</head>
+<body>
+    {% include 'public/head.html' %}
+
+
+    <div id="playimages" class="play">
+			<ul class="big_pic">
+				<div class="prev"><img src="/static/img/btn1.png"></div>
+				<div class="next"><img src="/static/img/btn2.png"></div>
+				<a class="mark_left" href="##"></a>
+				<a class="mark_right" href="##"></a>
+				<li style="z-index:1;"><img src="/static/img/lb6.jpg" /></li>
+				<li><img src="/static/img/lb2.jpg" /></li>
+				<li><img src="/static/img/lb3.jpg" /></li>
+				<li><img src="/static/img/lb4.jpg" /></li>
+				<li><img src="/static/img/lb5.jpg" /></li>
+				<li><img src="/static/img/1.jpg" /></li>
+			</ul>
+			<div class="small_pic">
+				<ul style="width:390px;" id="ul3">
+					<li style="filter:100; opacity: 1;"><img src="/static/img/lb6.jpg" /></li>
+					<li><img src="/static/img/lb2.jpg" /></li>
+					<li><img src="/static/img/lb3.jpg" /></li>
+					<li><img src="/static/img/lb4.jpg" /></li>
+					<li><img src="/static/img/lb5.jpg" /></li>
+					<li><img src="/static/img/1.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="{{url_for('static',filename='js/move.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static',filename='js/carousel.js')}}"></script>
+</body>
+</html>

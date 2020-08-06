@@ -1,0 +1,173 @@
+#car{
+    padding-bottom: 20px;
+}
+.dmall{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    position: relative;
+}
+.seach-title{
+    font-size: 28px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #ccc;
+}
+.seach-title span{font-size: 21px}
+.seach-detail li{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    height: 160px;
+    position: relative;
+}
+.seach-detail li div{float: left}
+
+/*car*/
+.dmv1{
+    margin-right: 100px;
+}
+.dmv1 img{
+    width: 100px;
+    height: 150px;
+}
+.orders{
+    padding-bottom: 20px;
+    position: relative;
+}
+.orders a{
+    padding: 5px 10px;
+    box-shadow: 0 0 2px 2px #ddd;
+    position: relative;
+    top: 5px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+.dv3{
+    box-shadow: 0 0 2px 2px #ddd;
+    position: absolute;
+    right: 20px;
+    top: 96px;
+    padding: 5px 20px;
+    background: red;
+}
+.dv3 a{
+    font-size: 14px;
+    color: white;
+}
+.ctitle{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.cprice{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.cprice span{
+    color: red;
+    font-size: 20px;
+
+}
+.btoom{
+    text-align: right;
+    height: 60px;
+}
+.btoom *{
+    float: right;
+}
+.changeNum button{
+   padding: 1px 20px;
+    font-size: 21px;
+}
+.guang{
+    margin-top: 15px;
+}
+.changeNum span{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px 0;
+}
+.buy{
+    padding-top: 10px;
+}
+.ckbuy{
+    padding-top: 20px;
+}
+.ckbuy label{
+    font-size: 13px;
+    color: #c6c6c5;
+}
+.ckbuy *{float: left}
+.ckbuy  input{
+    margin: 3px 25px 0 0;
+}
+.lastbtn{
+    padding: 10px 38px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/*order*/
+#ordrs .seach-detail li{
+    height: 90px;
+}
+.oderv1 p{
+    padding-top: 5px;
+}
+#ordrs .oderv2{
+    float: right;
+    margin-top: 30px;
+}
+.oderv2 p{
+    float: left;
+}
+.oderv2 p a{
+    color: red;
+}
+.oderv2 p:last-child::before{
+    content: '/';
+    font-size: 16px;
+    margin: 0 10px 0 10px;
+}
+.ordtv2 p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+.ordtv2 p{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.odrdprice span{
+    color: red;
+    font-size: 16px;
+}
+.orderSum{padding: 15px 0;margin-left: 70%}
+.orderSum span{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.oback{
+    padding-bottom: 15px;
+    position: absolute;
+    right: 2%;
+    top: 6.5%;
+}
+.oback a{
+    padding: 4px 35px;
+    background:orange;
+    color: white;
+}
+#ordrs .oback{
+    top: 21%;
+}
+#shpcar .oback{
+    top: 5.5%;
+}

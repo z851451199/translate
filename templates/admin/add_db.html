@@ -1,0 +1,15 @@
+{% extends 'admin/showList.html' %}
+{% block title %}商品添加{% endblock %}
+{% block content %}
+<h1 class="title2">商品数据添加</h1>
+    <div class="from">
+        <form action="/db_adds/" method="post" class="forms">
+            <input type="text" placeholder="请输入名称" name="name"><br />
+            <input type="text" placeholder="请输入价格" name="price"><br />
+            <input type="text" placeholder="请输入库存" name="num"><br />
+            <input type="text" placeholder="请输入介绍" name="content"><br />
+            <input type="text" placeholder="输入图片路径" name="img"><br />
+            <input type="submit" value="提交">
+        </form>
+    </div>
+{% endblock %}

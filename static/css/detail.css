@@ -1,0 +1,132 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none}
+a{color: black}
+.detail{
+    width: 70%;
+    height: 600px;
+    box-shadow: 0 0 2px 2px #ddd;
+    margin: 20px auto;
+}
+.dtop {
+    width: 100%;
+    height: 70%;
+}
+.dt1,.dt2{float: left;height: 100%}
+.dt1{
+    width: 40%;
+    text-align: center;
+}
+.dt2{
+    width: 60%;
+    position: relative;
+}
+.dt2 p:not(:nth-child(4)){
+    padding-left: 20px;
+}
+.dt2 p:nth-child(1){
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 25px 0;
+}
+.dt2 p:nth-child(2){
+    font-size: 21px;
+    padding: 30px 0;
+}
+.dt2 p:nth-child(3){
+    font-size: 21px;
+    padding: 10px 0 20px 0;
+}
+.dt2 p:nth-child(2) span{
+    font-size: 22px;
+    color: red;
+    margin-right: 5px;
+}
+.dt2 p:nth-child(4) a{
+    display: inline-block;
+    background: red;
+    width: 20%;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+}
+.dt1 img{
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+.dbt{
+    width: 90%;
+    margin: 0 auto;
+}
+.dbt h3{
+    font-size: 24px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.dbt p{
+    padding-top: 10px;
+}
+.dbt p a{
+    padding: 10px 10px;
+    margin-right: 100px;
+}
+
+/*dmore*/
+.m_detail{
+    width: 70%;
+    margin: 20px auto;
+}
+.seach-h3{
+    font-size: 28px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #ccc;
+}
+.seach-h3 span{font-size: 21px}
+.seach-detail li{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    height: 260px;
+}
+.seach-detail li div{float: left}
+.dmv1{
+    margin-right: 100px;
+}
+.dmv1 img{
+    width: 200px;
+    height: 250px;
+}
+.d2p1{
+    font-size: 21px;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+.d2p2{
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+.d2p2 span{
+    color: red;
+    font-weight: bolder;
+    font-size: 19px;
+}
+.d2p3{
+    font-size: 18px;
+     padding: 0px 0 10px 0;
+}
+.d2p4{
+    background: red;
+    width: 30%;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+.d2p4 a{
+    color: white;
+}

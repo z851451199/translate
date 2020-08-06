@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/shopping.css">
+    <script src="/static/js/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div class="shopping">
+    {% include 'public/head.html' %}
+    <div class="seach">
+        <form method="post" action="/search">
+            <div class="sh-box">
+                <input type="text" placeholder="婚纱" name="name">
+                <input type="submit" value="搜索" class="btn">
+            </div>
+        </form>
+    </div>
+
+    <div class="sh-main">
+        <h3 class="shm-h3">商品精选</h3>
+        <ul class="sh-content">
+            {% for s in result %}
+                <li>
+                    <a href="/detail?id={{ s.sid }}">
+                        <img src="/static/img/{{ s.imgUrl }}">
+                        <p class="shc-p1"><span>￥</span>{{ s.sprice }}</p>
+                        <p>{{ s.sname }}</p>
+                        <p class="shp-p3">
+                            {% if user %}
+                                <a href="/add_car1?Did={{ s.sid }}&uId={{ uid }}&page=shopping" class="adcar">加入购物车</a>
+                            {% else %}
+                                <a href="/login" class="adcar">加入购物车</a>
+                            {% endif %}
+                        </p>
+                    </a>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

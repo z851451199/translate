@@ -1,0 +1,179 @@
+*{margin: 0;padding: 0;text-decoration: none;list-style: none}
+html,body{width: 100%;height: 100%}
+.load{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.imgix{
+	width: 100%;
+    height: 800px;
+}
+#header{
+
+height: 100px;
+width: 100%;
+background-color: rgba(225,225,225,0.54);
+position: absolute;
+top: 0px;
+line-height: 80px;
+
+}
+#header ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-family: "微软雅黑";
+
+}
+#header ul{
+    width: 88%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+#header ul li:last-child{
+    margin-right: 0;
+
+}
+#header ul li{
+    height: 100%;
+    float: left;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+}
+
+#header ul li>img{
+    height: 100%;
+}
+.d1a{
+    float: left;
+}
+.d1{
+    margin-top: 16px;
+    width:40px;height:40px;
+    margin-right: 10px;
+    float: left;
+}
+.d1 img{width: 100%;height: 100%}
+
+
+.login_form {
+    width: 368px;
+    height: 378px;
+    border: 1px solid #c6c6c5;
+    background-color: #fff;
+    /*margin: 50px auto;*/
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    text-align: center;
+    margin-left: -184px;
+}
+.fr {
+    float: right;
+}
+.login_title {
+    height: 60px;
+    width: 308px;
+    margin: 10px auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.login_title h1 {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+    color: #a8a8a8;
+    float: left;
+    font-weight: bold;
+    margin-left: 44px;
+}
+.login_title a {
+    width: 100px;
+    height: 20px;
+    display: block;
+    font-size: 16px;
+    color: #5fb42a;
+    text-indent: 26px;
+    background: url(../img/icons02.png) left 5px no-repeat;
+    float: left;
+    margin: 20px 0 0 36px;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.name_input, .pass_input {
+    width: 306px;
+    height: 36px;
+    border: 1px solid #e0e0e0;
+    /*background: url(../images/icons02.png) 280px -41px no-repeat #f8f8f8;*/
+    background: #ddd;
+    outline: none;
+    font-size: 14px;
+    text-indent: 10px;
+    position: relative;
+    opacity: 0.6;
+    /*left: 0;*/
+    /*top: 0;*/
+    margin: 10px auto;
+}
+.more_input {
+    position: absolute;
+    /*left: 0;*/
+    bottom: 100px;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+}
+.clearfix {
+    zoom: 1;
+}
+.input_submit {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #47aa34;
+    color: #fff;
+    font-size: 22px;
+    border: 0px;
+    font-family: 'Microsoft Yahei';
+    cursor: pointer;
+}
+.more_input input {
+    float: left;
+    margin-top: 10px;
+}
+.more_input label {
+    float: left;
+    margin-left: 10px;
+}
+.more_input a {
+    float: right;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+

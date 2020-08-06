@@ -1,0 +1,16 @@
+{% extends 'admin/showList.html' %}
+{% block title %}商品添加{% endblock %}
+{% block content %}
+<h1 class="title2">数据修改</h1>
+<div class="from">
+    <form action="/updates" method="post" class="forms">
+        <label>编号：</label><input type="text" placeholder="不可修改" name="id" value="{{ res.sid }}"><br />
+        <label>名称：</label><input type="text" placeholder="" name="name" value="{{ res.sname }}"><br />
+        <label>价格：</label><input type="text" placeholder="" name="price" value="{{ res.sprice }}"><br />
+        <label>库存：</label><input type="text" placeholder="" name="num" value="{{ res.stock }}"><br />
+        <label>内容：</label><input type="text" placeholder="" name="content" value="{{ res.scontent }}"><br />
+        <label>图片：</label><input type="text" placeholder="" name="img" value="{{ res.imgUrl }}"><br />
+        <input type="submit" value="提交">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/css/car.css">
+{% extends 'all/shpcar.html' %}
+{% block  content  %}
+    <div class="dmall" id="ordrs">
+        <h3 class="seach-title">全部订单<br /></h3>
+        <p class="oback"><a href="/shpcar?uId={{ uid }}&page=">返回</a></p>
+        {% if result %}
+            <ul class="seach-detail">
+                {% for s in result %}
+                    <li>
+                        <div class="oderv1">
+                            <p>订单编号：{{ s.oid }}</p>
+                            <p>下单账号：{{ s.uname }}</p>
+                            <p>下单时间：{{ s.otime }}</p>
+                        </div>
+                        <div class="oderv2">
+                            <p><a href="/order_detail?oid={{ s.oid }}">查看详情</a></p>
+                            <p><a href="/order_delete?oid={{ s.oid }}&uid={{ uid }}">取消订单</a></p>
+                        </div>
+
+
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <ul class="seach-detail">
+                <li><h3>暂无下单</h3></li>
+            </ul>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

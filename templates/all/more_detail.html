@@ -1,0 +1,41 @@
+{% extends 'all/detail.html' %}
+{% block title%}商品搜索{% endblock %}
+{% block content %}
+    <div class="m_detail">
+        <h3 class="seach-h3">搜索内容：<span>{{ name }}</span></h3>
+        <ul class="seach-detail">
+        {% for s in rvlist %}
+
+            <li>
+                <a href="/detail?id={{ s.sid }}">
+                    <div class="dmv1"><img src="/static/img/{{ s.imgUrl }}"></div>
+                    <div class="dmt2">
+                        <p class="d2p1">{{ s.sname }}</p>
+                        <p class="d2p2"><span>￥</span>{{ s.sprice }}</p>
+                        <p class="d2p3">库存：{{ s.stock }}</p>
+                        <p class="d2p4">
+                            {% if user %}
+                            <a href="/add_car1?Did={{ s.sid }}&uId={{ uid }}&page=shopping">加入购物车</a>
+                            {% else %}
+                            <a href="/login">加入购物车</a>
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+        {% endfor %}
+        </ul>
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+

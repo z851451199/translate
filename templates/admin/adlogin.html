@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}管理员登陆{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+<div class="all" id="adlg">
+    <div class="nav"><a class="alga1">这是头部内容</a></div>
+    <div class="content">
+        {% block content %}
+            <form method="post" class="alg">
+                <h3>管理员登录页面</h3>
+                <input type="text" name="name" class="name_input" placeholder="请输入帐号"><br/>
+                <input type="password" name="pwd" class="pass_input" placeholder="请输入密码"><br/>
+                <input type="submit" name="" value="登录" id="input_submit">
+                <p>欢迎您的到来,管理员</p>
+            </form>
+        {% endblock %}
+    </div>
+    <div class="footer">
+        {% block footer %}这是尾部{% endblock %}
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

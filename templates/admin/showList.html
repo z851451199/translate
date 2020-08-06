@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}后台管理系统{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+<div class="all">
+{% if user %}
+    <div class="nav">
+        <p>欢迎回来：<span>{{user}}</span> 管理员！<a href="/adlogout">注销</a></p>
+    </div>
+
+    <div class="content">
+        {% block content %}
+            <div class="ct1 ct0">
+                <h3>用户管理</h3>
+                <p class="ctp"><span>查看数据</span><a href="/showList1" class="ctpa1">执行</a></p>
+            </div>
+            <div class="ct2 ct0">
+                <h3>商品管理</h3>
+                <p class="ctp"><span>数据添加</span><a href="/db_add">执行</a><span>查看数据</span><a href="/showList2">执行</a></p>
+            </div>
+        {% endblock %}
+    </div>
+    <div class="footer">
+        {% block footer %}这是尾部{% endblock %}
+    </div>
+
+{% else %}
+    <h1>404</h1>
+{% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="/static/css/car.css">
+{% extends 'all/shpcar.html' %}
+{% block content  %}
+    <div class="dmall">
+        <h3 class="seach-title">订单详情<br /></h3>
+        <p class="oback"><a href="/order_more?uid={{ uid }}">返回</a></p>
+        <ul class="seach-detail">
+            {% for s in result %}
+                <li class="orderList">
+                    <a href="/detail?id={{ s.sid }}"><div class="dmv1"><img src="/static/img/{{ s.imgUrl }}"></div></a>
+                    <div class="ordtv2">
+                        <p>商品名称：{{ s.sname }}</p>
+                        <p class="odrdprice">单价：<span>${{ s.sprice }}</span></p>
+                        <p class="olsum_num">购买数量：<span>{{ s.onum }}</span></p>
+                        <p>订单编号：{{ s.oid }}</p>
+                        <p class="olsum_price">小计：<span>{{ s.onum * s.sprice }}</span> 元</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <p class="orderSum">共：<span class="opsp1"></span>总计：<span class="opsp2"></span></p>
+    </div>
+    <script type="text/javascript">
+        var sum2 = 0;
+        var sum1 = 0;
+        $('.olsum_num').each(function (i) {
+            sum1 +=Number($('.olsum_num span').eq(i).text())
+        });
+        $('.olsum_price').each(function (i) {
+            sum2 +=Number($('.olsum_price span').eq(i).text())
+        });
+        $('.orderSum .opsp1').text(sum1+'件');
+        $('.orderSum .opsp2').text(sum2+'元');
+    </script>
+{% endblock %}

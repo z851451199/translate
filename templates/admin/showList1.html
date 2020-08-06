@@ -1,0 +1,33 @@
+{% extends 'admin/showList.html' %}
+{% block title %}用户管理{% endblock %}
+{% block content %}
+    <h3 class="title1">商品基本信息展示</h3>
+
+    <table class="tab">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>用户名</th>
+                <th>用户电话</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for i in list %}
+            <tr>
+                <td>{{ i.uid }}</td>
+                <td>{{ i.uname }}</td>
+                <td>{{ i.uphone }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p class="adp"><a class="add" id="ads">欢迎访问</a></p>
+{% endblock %}
+
+
+
+
+
+
+
+
